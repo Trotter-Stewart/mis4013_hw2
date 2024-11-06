@@ -6,7 +6,7 @@ include "view-header.php";
 <?php
 function getDisplay() {
     if (isset($_POST['my-name']) && !empty($_POST['my-name'])) {
-        return "<p>The value sent is: " . htmlspecialchars($_POST['my-name']) . "</p>";
+        return "<p>The value sent is: " . ($_POST['my-name']) . "</p>";
     } else {
         return "<p>Nothing posted to the page.</p>";
     }
